@@ -22,8 +22,8 @@ Created mock CDISC-compliant SDTM and ADaM datasets using SAS, and generated exa
 ### 💊 [Claims-Based Adherence Analysis](./ClaimsAnalysis)
 Used simulated claims data to calculate proportion of days covered (PDC) and medication possession ratio (MPR), with stratified summaries by age, sex, and payer type. Includes code and visualizations.
 
-### 🧪 [HCV ELR Data Quality Analysis](./HCV_ELR_Project)  
-Used mock Electronic Lab Reporting (ELR) data to evaluate completeness, detect duplicates, and summarize key fields for HCV surveillance using SAS.
+### 🧪 [City A HCV Data Quality Analysis](./HCV_ELR_Project)  
+Used mock Electronic Lab Reporting (ELR) data for City A to evaluate completeness, detect duplicates, and summarize key fields for HCV surveillance using SAS. Additionally, assess disease ocurrence and rates in City A. Calculate significant differences in HCV detected patients according to age, race or sex in City A.
 
 ## 📎 Notes
 
