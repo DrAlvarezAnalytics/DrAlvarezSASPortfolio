@@ -22,7 +22,6 @@ with the goal of identifying areas for system improvement.
 | `Attribute_Evaluation.sas` | SAS code used to process evaluation data |
 | `Create_MDRO_CDI_datasets.sas` | SAS code used to create reported MDROs datasets |
 | `Reporting_Facilities_datasets.sas` | SAS code used to create Reporting Facilities datasets |
-| `NHSN_Evaluation_Presentation_CarlosAlvarez.pptx` | Final presentation delivered to CDC NHSN leadership |
 | `README.md` | Project overview and documentation |
 
 ## 🧾 Key Deliverables
@@ -35,7 +34,7 @@ with the goal of identifying areas for system improvement.
 
 - **SAS** for data processing, summary statistics and evaluation of timeliness, representativess, Data Quality, Completeness
 - **Microsoft Excel** for analyzing usefulness, stability, flexibility, and Simplicity
-- **PowerPoint** for final communication and presentation
+- **PowerPoint** for chart/visualization generation and presentation
 
 ## 🎓 Project Context
 
