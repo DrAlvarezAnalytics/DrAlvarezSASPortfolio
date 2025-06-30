@@ -1,4 +1,4 @@
-# 🧪 City A HCV Data Quality Analysis
+# 🧪 City A HCV Laboratory Data Analysis
 
 This project leverages mock Electronic Lab Reporting (ELR) data to evaluate hepatitis C virus (HCV) testing and reporting quality in a jurisdiction referred to as "City A." The goal was to simulate a real-world epidemiologic surveillance analysis by identifying trends and gaps in data related to disease occurrence and HCV seroconversion.
 
@@ -27,7 +27,7 @@ The data was designed with:
 ## 📁 Files
 
 - `data/HCV_ELR_MockData_CityA.csv`: Simulated dataset (~14K records)
-- `data/HCV_ELR_MockData_CityA.csv`: SAS analysis dataset (~14k records)
+- `data/datahcv1.sas7bdat`: SAS analysis dataset (~14k records)
 - `analysis/CityA_ELR_HCV_analysis.sas`: SAS program to analyze HCV positivity and identify seroconversions
 - `slides/City A_HD_HCV_Analysis.pdf`: Summary presentation
 
