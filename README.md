@@ -17,10 +17,10 @@ I’m a Doctor of Public Health (DrPH) with deep experience in infectious diseas
 ## 📁 Featured Projects
 
 ### 🧪 [City A HCV Laboratory Data Analysis](./HCV_ELR_Project)  
-Used mock Electronic Lab Reporting (ELR) data for City A to assess disease ocurrence and rates in City A. The project calculated significant differences in HCV detected patients according to age, race or sex in City A. Additionally, seroconversions within study period were calculated.  This project was inspired by a presentation delivered at the 2018 Texas HIV/STD Conference.
+Analyzed mock 2022–2024 ELR data for City A to assess hepatitis C (HCV) detection patterns and seroconversions. Identified significant differences in HCV positivity by age, sex, and race, and estimated time to seroconversion. Demonstrates public health surveillance analytics, SAS-based epidemiologic modeling, and application of data quality principles.
 
 ### 📈 [Surveillance System Evaluation – NHSN MDRO/CDI](./SurveillanceSystemEvaluation)  
-Evaluated the NHSN MDRO/CDI surveillance module using CDC guidelines for surveillance system evaluation. Assessed attributes like timeliness, data quality, and usefulness to inform recommendations for improving HAI surveillance performance. Given the sensitive nature of CDC data, full project deliverables (e.g., NHSN evaluation report, and raw SAS programs) are stored in a private repository and available upon request.
+Evaluated the NHSN MDRO/CDI surveillance module using CDC’s guidelines for public health surveillance system evaluation. Assessed key attributes including timeliness, data quality, and usefulness to generate actionable recommendations for improving HAI surveillance. Demonstrates applied evaluation methodology, SAS programming for surveillance analysis, and translation of findings into system improvement strategies. Due to CDC data sensitivity, full deliverables are stored in a private repository and available upon request.
 
 ### 🧪 [Measles Vaccine Safety Surveillance (VAERS)](./VAERS_Measles_AE_Project) (in progress)  
 Analyzing 2010–2024 VAERS reports for measles-containing vaccines (MMR, MMRV) to characterize adverse event patterns by age, severity, and symptom clusters. Demonstrates real-world data handling, passive surveillance analysis, and safety signal exploration.
@@ -29,8 +29,7 @@ Analyzing 2010–2024 VAERS reports for measles-containing vaccines (MMR, MMRV) 
 Created mock CDISC-compliant SDTM and ADaM datasets using SAS, and generated example Tables, Listings, and Figures (TLFs) for regulatory-style output. Demonstrates knowledge of trial data structure and SAS macro use.
 
 ### 💊 [Claims-Based Adherence Analysis](./ClaimsAnalysis) (in progress)
-Used simulated claims data to calculate proportion of days covered (PDC) and medication possession ratio (MPR), with stratified summaries by age, sex, and payer type. Includes code and visualizations.
-
+Analyzed simulated pharmacy claims data to calculate adherence metrics—proportion of days covered (PDC) and medication possession ratio (MPR)—with stratified summaries by age, sex, and payer type. Demonstrates foundational real-world data (RWD) analysis, medication adherence measurement, and data visualization techniques using structured claims data.
 
 
 ## 📎 Notes
