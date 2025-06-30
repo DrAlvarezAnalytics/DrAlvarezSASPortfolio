@@ -16,7 +16,7 @@ I’m a Doctor of Public Health (DrPH) with deep experience in infectious diseas
 
 ## 📁 Featured Projects
 
-### 🧪 [City A HCV Data Quality Analysis](./HCV_ELR_Project)  
+### 🧪 [City A HCV Laboratory Data Analysis](./HCV_ELR_Project)  
 Used mock Electronic Lab Reporting (ELR) data for City A to assess disease ocurrence and rates in City A. The project calculated significant differences in HCV detected patients according to age, race or sex in City A. Additionally, seroconversions within study period were calculated.  This project was inspired by a presentation delivered at the 2018 Texas HIV/STD Conference.
 
 ### 📈 [Surveillance System Evaluation – NHSN MDRO/CDI](./SurveillanceSystemEvaluation)  
