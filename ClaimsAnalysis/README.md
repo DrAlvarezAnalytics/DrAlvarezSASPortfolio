@@ -21,7 +21,22 @@ This project uses simulated pharmacy claims data to evaluate medication adherenc
   - Race/Ethnicity
 - Use logistic regression to identify predictors of non-adherence
 
-## 📁 Repository Structure
+## 📁 Files
+- `data/AxMed_Claims_Mock_Dataset.csv`: Simulated dataset
+- `data/AxMed_Claims_Analysis_Dataset.xls`: Excel analysis dataset (Used for Tableau Dashboard)
+- `analysis/AxMed_Claims_Analysis.sas`: SAS program to calculate PDC, MPR and adherence
+- `Reporting/AxMed_Claims_Analysis_Output.pdf`: SAS program Output
+- `Reporting/AxMed_Claims_SAP.pdf`: Fictional Organization Statistical Analysis Plan (SAP)
+
+## 🧠 Skills Demonstrated
+
+- **Pharmacy Claims Data Analysis**: Interpreted and manipulated longitudinal prescription fill data to calculate patient-level adherence metrics (PDC, MPR).
+- **SAS Programming**: Utilized SAS for data cleaning, summary statistics, conditional logic, and logistic regression modeling.
+- **Real-World Evidence (RWE) Methodology**: Applied RWE concepts to assess real-world medication use and adherence patterns across demographic subgroups.
+- **Health Equity Analysis**: Stratified adherence outcomes by race/ethnicity and payer type to evaluate disparities in access or engagement.
+- **Data Simulation**: Generated a synthetic but realistic dataset to mimic claims-based structures used in public health and pharma settings.
+- **Data Visualization**: Created interactive dashboards in Tableau Public to communicate adherence patterns and subgroup comparisons effectively.
+- **Documentation & Reporting**: Developed a Statistical Analysis Plan (SAP) and exported results to structured PDF output for stakeholders.
 
 
 
