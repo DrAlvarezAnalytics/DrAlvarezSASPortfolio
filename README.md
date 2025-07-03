@@ -9,6 +9,7 @@ I’m a Doctor of Public Health (DrPH) with deep experience in infectious diseas
 ## 🧰 Core Skills
 
 - SAS (Base, Proc SQL, Macros)
+- SQL (SQLiteStudio)
 - Surveillance system evaluation (CDC - NHSN and NBS)
 - Data visualization (Tableau, Excel)
 - Public health reporting & dashboarding
