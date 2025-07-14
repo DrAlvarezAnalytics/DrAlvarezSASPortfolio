@@ -15,7 +15,7 @@ and interactive data visualization.
 
 ## 🧰 Tools & Technologies
 
-- **SQLite** – Data wrangling, joins, filtering, and preparation
+- **SQLiteStudio** – Data wrangling, joins, filtering, and preparation
 - **SAS** – Descriptive analysis and logistic regression
 - **Tableau Public** – Interactive visualization and storytelling
 
