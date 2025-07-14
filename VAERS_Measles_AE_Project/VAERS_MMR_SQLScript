@@ -1,0 +1,601 @@
+-- ===============================================
+-- Purpose:
+-- Consolidate VAERS data for a specific year by 
+-- joining three datasets—vaccination records (vaersvax), 
+-- adverse event reports(vaersdata), and symptom descriptions (vaerssymp)—
+-- into a unified table for downstream analysis.
+--
+-- Input Tables:
+--   - vaersdata{YEAR}: Contains demographic and event-level data.
+--   - vaersvax{YEAR}: Contains vaccine-specific details.
+--   - vaerssymp{YEAR}: Contains reported symptoms associated with events.
+--
+-- Output:
+--   - vaers{YEAR}: A new table containing all merged records,
+--     joined on VAERS_ID to ensure consistency across sources.
+--
+--  Objective: Analyzing 2014–2024 VAERS reports for measles-containing vaccines (MMR, MMRV) to characterize adverse event patterns by age, 
+--  severity, and symptom clusters. Demonstrates real-world data handling, passive surveillance analysis, and safety signal exploration.
+-- ===============================================
+
+-- This creates a Measles dataset for each year with selected variables for analysis
+CREATE TABLE mmrvaersdata2014 AS
+SELECT 
+  d.VAERS_ID,
+  d.RECVDATE,
+  d.STATE,
+  d.AGE_YRS,
+  d.CAGE_YR,
+  d.CAGE_MO,
+  d.SEX,
+  d.DIED,
+  d.DATEDIED,
+  d.L_THREAT,
+  d.ER_VISIT,
+  d.ER_ED_VISIT,
+  d.OFC_VISIT,
+  d.HOSPITAL,
+  d.HOSPDAYS,
+  d.X_STAY,
+  d.DISABLE,
+  d.RECOVD,
+  d.VAX_DATE,
+  d.ONSET_DATE,
+  d.NUMDAYS,
+  d.BIRTH_DEFECT,
+  d.SYMPTOM_TEXT,
+  d.OTHER_MEDS,
+  d.CUR_ILL,
+  d.HISTORY,
+  d.PRIOR_VAX,
+  d.ALLERGIES,
+
+  v.VAX_TYPE,
+  v.VAX_MANU,
+  v.VAX_NAME,
+  v.VAX_LOT,
+  v.VAX_ROUTE,
+  v.VAX_SITE,
+  v.VAX_DOSE_SERIES,
+
+  s.SYMPTOM1,
+  s.SYMPTOM2,
+  s.SYMPTOM3,
+  s.SYMPTOM4,
+  s.SYMPTOM5
+
+FROM vaersdata2014 d
+INNER JOIN vaersvax2014 v ON d.VAERS_ID = v.VAERS_ID
+INNER JOIN vaerssymp2014 s ON d.VAERS_ID = s.VAERS_ID
+WHERE v.VAX_TYPE IN ('MMR', 'MMRV');
+
+CREATE TABLE mmrvaersdata2015 AS
+SELECT 
+  d.VAERS_ID,
+  d.RECVDATE,
+  d.STATE,
+  d.AGE_YRS,
+  d.CAGE_YR,
+  d.CAGE_MO,
+  d.SEX,
+  d.DIED,
+  d.DATEDIED,
+  d.L_THREAT,
+  d.ER_VISIT,
+  d.ER_ED_VISIT,
+  d.OFC_VISIT,
+  d.HOSPITAL,
+  d.HOSPDAYS,
+  d.X_STAY,
+  d.DISABLE,
+  d.RECOVD,
+  d.VAX_DATE,
+  d.ONSET_DATE,
+  d.NUMDAYS,
+  d.BIRTH_DEFECT,
+  d.SYMPTOM_TEXT,
+  d.OTHER_MEDS,
+  d.CUR_ILL,
+  d.HISTORY,
+  d.PRIOR_VAX,
+  d.ALLERGIES,
+
+  v.VAX_TYPE,
+  v.VAX_MANU,
+  v.VAX_NAME,
+  v.VAX_LOT,
+  v.VAX_ROUTE,
+  v.VAX_SITE,
+  v.VAX_DOSE_SERIES,
+
+  s.SYMPTOM1,
+  s.SYMPTOM2,
+  s.SYMPTOM3,
+  s.SYMPTOM4,
+  s.SYMPTOM5
+
+FROM vaersdata2015 d
+INNER JOIN vaersvax2015 v ON d.VAERS_ID = v.VAERS_ID
+INNER JOIN vaerssymp2015 s ON d.VAERS_ID = s.VAERS_ID
+WHERE v.VAX_TYPE IN ('MMR', 'MMRV');
+
+CREATE TABLE mmrvaersdata2016 AS
+SELECT 
+  d.VAERS_ID,
+  d.RECVDATE,
+  d.STATE,
+  d.AGE_YRS,
+  d.CAGE_YR,
+  d.CAGE_MO,
+  d.SEX,
+  d.DIED,
+  d.DATEDIED,
+  d.L_THREAT,
+  d.ER_VISIT,
+  d.ER_ED_VISIT,
+  d.OFC_VISIT,
+  d.HOSPITAL,
+  d.HOSPDAYS,
+  d.X_STAY,
+  d.DISABLE,
+  d.RECOVD,
+  d.VAX_DATE,
+  d.ONSET_DATE,
+  d.NUMDAYS,
+  d.BIRTH_DEFECT,
+  d.SYMPTOM_TEXT,
+  d.OTHER_MEDS,
+  d.CUR_ILL,
+  d.HISTORY,
+  d.PRIOR_VAX,
+  d.ALLERGIES,
+
+  v.VAX_TYPE,
+  v.VAX_MANU,
+  v.VAX_NAME,
+  v.VAX_LOT,
+  v.VAX_ROUTE,
+  v.VAX_SITE,
+  v.VAX_DOSE_SERIES,
+
+  s.SYMPTOM1,
+  s.SYMPTOM2,
+  s.SYMPTOM3,
+  s.SYMPTOM4,
+  s.SYMPTOM5
+
+FROM vaersdata2016 d
+INNER JOIN vaersvax2016 v ON d.VAERS_ID = v.VAERS_ID
+INNER JOIN vaerssymp2016 s ON d.VAERS_ID = s.VAERS_ID
+WHERE v.VAX_TYPE IN ('MMR', 'MMRV');
+
+CREATE TABLE mmrvaersdata2017 AS
+SELECT 
+  d.VAERS_ID,
+  d.RECVDATE,
+  d.STATE,
+  d.AGE_YRS,
+  d.CAGE_YR,
+  d.CAGE_MO,
+  d.SEX,
+  d.DIED,
+  d.DATEDIED,
+  d.L_THREAT,
+  d.ER_VISIT,
+  d.ER_ED_VISIT,
+  d.OFC_VISIT,
+  d.HOSPITAL,
+  d.HOSPDAYS,
+  d.X_STAY,
+  d.DISABLE,
+  d.RECOVD,
+  d.VAX_DATE,
+  d.ONSET_DATE,
+  d.NUMDAYS,
+  d.BIRTH_DEFECT,
+  d.SYMPTOM_TEXT,
+  d.OTHER_MEDS,
+  d.CUR_ILL,
+  d.HISTORY,
+  d.PRIOR_VAX,
+  d.ALLERGIES,
+
+  v.VAX_TYPE,
+  v.VAX_MANU,
+  v.VAX_NAME,
+  v.VAX_LOT,
+  v.VAX_ROUTE,
+  v.VAX_SITE,
+  v.VAX_DOSE_SERIES,
+
+  s.SYMPTOM1,
+  s.SYMPTOM2,
+  s.SYMPTOM3,
+  s.SYMPTOM4,
+  s.SYMPTOM5
+
+FROM vaersdata2017 d
+INNER JOIN vaersvax2017 v ON d.VAERS_ID = v.VAERS_ID
+INNER JOIN vaerssymp2017 s ON d.VAERS_ID = s.VAERS_ID
+WHERE v.VAX_TYPE IN ('MMR', 'MMRV');
+
+
+CREATE TABLE mmrvaersdata2018 AS
+SELECT 
+  d.VAERS_ID,
+  d.RECVDATE,
+  d.STATE,
+  d.AGE_YRS,
+  d.CAGE_YR,
+  d.CAGE_MO,
+  d.SEX,
+  d.DIED,
+  d.DATEDIED,
+  d.L_THREAT,
+  d.ER_VISIT,
+  d.ER_ED_VISIT,
+  d.OFC_VISIT,
+  d.HOSPITAL,
+  d.HOSPDAYS,
+  d.X_STAY,
+  d.DISABLE,
+  d.RECOVD,
+  d.VAX_DATE,
+  d.ONSET_DATE,
+  d.NUMDAYS,
+  d.BIRTH_DEFECT,
+  d.SYMPTOM_TEXT,
+  d.OTHER_MEDS,
+  d.CUR_ILL,
+  d.HISTORY,
+  d.PRIOR_VAX,
+  d.ALLERGIES,
+
+  v.VAX_TYPE,
+  v.VAX_MANU,
+  v.VAX_NAME,
+  v.VAX_LOT,
+  v.VAX_ROUTE,
+  v.VAX_SITE,
+  v.VAX_DOSE_SERIES,
+
+  s.SYMPTOM1,
+  s.SYMPTOM2,
+  s.SYMPTOM3,
+  s.SYMPTOM4,
+  s.SYMPTOM5
+
+FROM vaersdata2018 d
+INNER JOIN vaersvax2018 v ON d.VAERS_ID = v.VAERS_ID
+INNER JOIN vaerssymp2018 s ON d.VAERS_ID = s.VAERS_ID
+WHERE v.VAX_TYPE IN ('MMR', 'MMRV');
+
+CREATE TABLE mmrvaersdata2019 AS
+SELECT 
+  d.VAERS_ID,
+  d.RECVDATE,
+  d.STATE,
+  d.AGE_YRS,
+  d.CAGE_YR,
+  d.CAGE_MO,
+  d.SEX,
+  d.DIED,
+  d.DATEDIED,
+  d.L_THREAT,
+  d.ER_VISIT,
+  d.ER_ED_VISIT,
+  d.OFC_VISIT,
+  d.HOSPITAL,
+  d.HOSPDAYS,
+  d.X_STAY,
+  d.DISABLE,
+  d.RECOVD,
+  d.VAX_DATE,
+  d.ONSET_DATE,
+  d.NUMDAYS,
+  d.BIRTH_DEFECT,
+  d.SYMPTOM_TEXT,
+  d.OTHER_MEDS,
+  d.CUR_ILL,
+  d.HISTORY,
+  d.PRIOR_VAX,
+  d.ALLERGIES,
+
+  v.VAX_TYPE,
+  v.VAX_MANU,
+  v.VAX_NAME,
+  v.VAX_LOT,
+  v.VAX_ROUTE,
+  v.VAX_SITE,
+  v.VAX_DOSE_SERIES,
+
+  s.SYMPTOM1,
+  s.SYMPTOM2,
+  s.SYMPTOM3,
+  s.SYMPTOM4,
+  s.SYMPTOM5
+
+FROM vaersdata2019 d
+INNER JOIN vaersvax2019 v ON d.VAERS_ID = v.VAERS_ID
+INNER JOIN vaerssymp2019 s ON d.VAERS_ID = s.VAERS_ID
+WHERE v.VAX_TYPE IN ('MMR', 'MMRV');
+
+CREATE TABLE mmrvaersdata2020 AS
+SELECT 
+  d.VAERS_ID,
+  d.RECVDATE,
+  d.STATE,
+  d.AGE_YRS,
+  d.CAGE_YR,
+  d.CAGE_MO,
+  d.SEX,
+  d.DIED,
+  d.DATEDIED,
+  d.L_THREAT,
+  d.ER_VISIT,
+  d.ER_ED_VISIT,
+  d.OFC_VISIT,
+  d.HOSPITAL,
+  d.HOSPDAYS,
+  d.X_STAY,
+  d.DISABLE,
+  d.RECOVD,
+  d.VAX_DATE,
+  d.ONSET_DATE,
+  d.NUMDAYS,
+  d.BIRTH_DEFECT,
+  d.SYMPTOM_TEXT,
+  d.OTHER_MEDS,
+  d.CUR_ILL,
+  d.HISTORY,
+  d.PRIOR_VAX,
+  d.ALLERGIES,
+
+  v.VAX_TYPE,
+  v.VAX_MANU,
+  v.VAX_NAME,
+  v.VAX_LOT,
+  v.VAX_ROUTE,
+  v.VAX_SITE,
+  v.VAX_DOSE_SERIES,
+
+  s.SYMPTOM1,
+  s.SYMPTOM2,
+  s.SYMPTOM3,
+  s.SYMPTOM4,
+  s.SYMPTOM5
+
+FROM vaersdata2020 d
+INNER JOIN vaersvax2020 v ON d.VAERS_ID = v.VAERS_ID
+INNER JOIN vaerssymp2020 s ON d.VAERS_ID = s.VAERS_ID
+WHERE v.VAX_TYPE IN ('MMR', 'MMRV');
+
+CREATE TABLE mmrvaersdata2021 AS
+SELECT 
+  d.VAERS_ID,
+  d.RECVDATE,
+  d.STATE,
+  d.AGE_YRS,
+  d.CAGE_YR,
+  d.CAGE_MO,
+  d.SEX,
+  d.DIED,
+  d.DATEDIED,
+  d.L_THREAT,
+  d.ER_VISIT,
+  d.ER_ED_VISIT,
+  d.OFC_VISIT,
+  d.HOSPITAL,
+  d.HOSPDAYS,
+  d.X_STAY,
+  d.DISABLE,
+  d.RECOVD,
+  d.VAX_DATE,
+  d.ONSET_DATE,
+  d.NUMDAYS,
+  d.BIRTH_DEFECT,
+  d.SYMPTOM_TEXT,
+  d.OTHER_MEDS,
+  d.CUR_ILL,
+  d.HISTORY,
+  d.PRIOR_VAX,
+  d.ALLERGIES,
+
+  v.VAX_TYPE,
+  v.VAX_MANU,
+  v.VAX_NAME,
+  v.VAX_LOT,
+  v.VAX_ROUTE,
+  v.VAX_SITE,
+  v.VAX_DOSE_SERIES,
+
+  s.SYMPTOM1,
+  s.SYMPTOM2,
+  s.SYMPTOM3,
+  s.SYMPTOM4,
+  s.SYMPTOM5
+
+FROM vaersdata2021 d
+INNER JOIN vaersvax2021 v ON d.VAERS_ID = v.VAERS_ID
+INNER JOIN vaerssymp2021 s ON d.VAERS_ID = s.VAERS_ID
+WHERE v.VAX_TYPE IN ('MMR', 'MMRV');
+
+CREATE TABLE mmrvaersdata2022 AS
+SELECT 
+  d.VAERS_ID,
+  d.RECVDATE,
+  d.STATE,
+  d.AGE_YRS,
+  d.CAGE_YR,
+  d.CAGE_MO,
+  d.SEX,
+  d.DIED,
+  d.DATEDIED,
+  d.L_THREAT,
+  d.ER_VISIT,
+  d.ER_ED_VISIT,
+  d.OFC_VISIT,
+  d.HOSPITAL,
+  d.HOSPDAYS,
+  d.X_STAY,
+  d.DISABLE,
+  d.RECOVD,
+  d.VAX_DATE,
+  d.ONSET_DATE,
+  d.NUMDAYS,
+  d.BIRTH_DEFECT,
+  d.SYMPTOM_TEXT,
+  d.OTHER_MEDS,
+  d.CUR_ILL,
+  d.HISTORY,
+  d.PRIOR_VAX,
+  d.ALLERGIES,
+
+  v.VAX_TYPE,
+  v.VAX_MANU,
+  v.VAX_NAME,
+  v.VAX_LOT,
+  v.VAX_ROUTE,
+  v.VAX_SITE,
+  v.VAX_DOSE_SERIES,
+
+  s.SYMPTOM1,
+  s.SYMPTOM2,
+  s.SYMPTOM3,
+  s.SYMPTOM4,
+  s.SYMPTOM5
+
+FROM vaersdata2022 d
+INNER JOIN vaersvax2022 v ON d.VAERS_ID = v.VAERS_ID
+INNER JOIN vaerssymp2022 s ON d.VAERS_ID = s.VAERS_ID
+WHERE v.VAX_TYPE IN ('MMR', 'MMRV');
+
+CREATE TABLE mmrvaersdata2023 AS
+SELECT 
+  d.VAERS_ID,
+  d.RECVDATE,
+  d.STATE,
+  d.AGE_YRS,
+  d.CAGE_YR,
+  d.CAGE_MO,
+  d.SEX,
+  d.DIED,
+  d.DATEDIED,
+  d.L_THREAT,
+  d.ER_VISIT,
+  d.ER_ED_VISIT,
+  d.OFC_VISIT,
+  d.HOSPITAL,
+  d.HOSPDAYS,
+  d.X_STAY,
+  d.DISABLE,
+  d.RECOVD,
+  d.VAX_DATE,
+  d.ONSET_DATE,
+  d.NUMDAYS,
+  d.BIRTH_DEFECT,
+  d.SYMPTOM_TEXT,
+  d.OTHER_MEDS,
+  d.CUR_ILL,
+  d.HISTORY,
+  d.PRIOR_VAX,
+  d.ALLERGIES,
+
+  v.VAX_TYPE,
+  v.VAX_MANU,
+  v.VAX_NAME,
+  v.VAX_LOT,
+  v.VAX_ROUTE,
+  v.VAX_SITE,
+  v.VAX_DOSE_SERIES,
+
+  s.SYMPTOM1,
+  s.SYMPTOM2,
+  s.SYMPTOM3,
+  s.SYMPTOM4,
+  s.SYMPTOM5
+
+FROM vaersdata2023 d
+INNER JOIN vaersvax2023 v ON d.VAERS_ID = v.VAERS_ID
+INNER JOIN vaerssymp2023 s ON d.VAERS_ID = s.VAERS_ID
+WHERE v.VAX_TYPE IN ('MMR', 'MMRV');
+
+CREATE TABLE mmrvaersdata2024 AS
+SELECT 
+  d.VAERS_ID,
+  d.RECVDATE,
+  d.STATE,
+  d.AGE_YRS,
+  d.CAGE_YR,
+  d.CAGE_MO,
+  d.SEX,
+  d.DIED,
+  d.DATEDIED,
+  d.L_THREAT,
+  d.ER_VISIT,
+  d.ER_ED_VISIT,
+  d.OFC_VISIT,
+  d.HOSPITAL,
+  d.HOSPDAYS,
+  d.X_STAY,
+  d.DISABLE,
+  d.RECOVD,
+  d.VAX_DATE,
+  d.ONSET_DATE,
+  d.NUMDAYS,
+  d.BIRTH_DEFECT,
+  d.SYMPTOM_TEXT,
+  d.OTHER_MEDS,
+  d.CUR_ILL,
+  d.HISTORY,
+  d.PRIOR_VAX,
+  d.ALLERGIES,
+
+  v.VAX_TYPE,
+  v.VAX_MANU,
+  v.VAX_NAME,
+  v.VAX_LOT,
+  v.VAX_ROUTE,
+  v.VAX_SITE,
+  v.VAX_DOSE_SERIES,
+
+  s.SYMPTOM1,
+  s.SYMPTOM2,
+  s.SYMPTOM3,
+  s.SYMPTOM4,
+  s.SYMPTOM5
+
+FROM vaersdata2024 d
+INNER JOIN vaersvax2024 v ON d.VAERS_ID = v.VAERS_ID
+INNER JOIN vaerssymp2024 s ON d.VAERS_ID = s.VAERS_ID
+WHERE v.VAX_TYPE IN ('MMR', 'MMRV');
+
+CREATE TABLE mmrvaersdatall AS
+SELECT * FROM mmrvaersdata2014
+UNION ALL
+SELECT * FROM mmrvaersdata2015
+UNION ALL
+SELECT * FROM mmrvaersdata2016
+UNION ALL
+SELECT * FROM mmrvaersdata2017
+UNION ALL
+SELECT * FROM mmrvaersdata2018
+UNION ALL
+SELECT * FROM mmrvaersdata2019
+UNION ALL
+SELECT * FROM mmrvaersdata2020
+UNION ALL
+SELECT * FROM mmrvaersdata2021
+UNION ALL
+SELECT * FROM mmrvaersdata2022
+UNION ALL
+SELECT * FROM mmrvaersdata2023
+UNION ALL
+SELECT * FROM mmrvaersdata2024;
+
+
+--This creates a frequency table with all vaccine types
+SELECT vax_type, COUNT(*) AS frequency
+FROM mmrvaersdatall
+GROUP BY vax_type
+ORDER BY frequency DESC;
