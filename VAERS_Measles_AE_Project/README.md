@@ -23,7 +23,7 @@ and interactive data visualization.
 
 | Component | Description |
 |----------|-------------|
-| `import_vaers_to_sqlite.py` | SQL Queries Extract, filter, and join VAERS Data/Symptom/Vax tables for MMR/MMRV |
+| `VAERS_MMR_SQLScript` | SQL queries Extract, filter, and join VAERS Data/Symptom/Vax tables for MMR/MMRV |
 | `mmrvaersalldata.csv` | Structured dataset with 2010–2024 MMR/MMRV reports |
 | `VAERS_MMR_Safety_Analysis_Summary.pdf` | Descriptive Statistics, Symptoms Analysis, Logistic Regression SAS Output |
 | `VAERS_MMR_Safety_Analysis_Summary.pdf` | Summary/Interpretation document for VAERS MMR/MMRV project |
