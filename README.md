@@ -20,7 +20,7 @@ I’m a Doctor of Public Health (DrPH) with deep experience in infectious diseas
 ### 🔬 [Clinical Trial Dataset Simulation](./ClinicalTrialProject) (in progress)
 Created mock CDISC-compliant SDTM and ADaM datasets using SAS, and generated example Tables, Listings, and Figures (TLFs) for regulatory-style output. Demonstrates knowledge of trial data structure and SAS macro use.
 
-### 🧪 [Measles Vaccine Safety Surveillance (VAERS)](./VAERS_Measles_AE_Project) (in progress)  
+### 🧪 [Measles Vaccine Safety Surveillance (VAERS)](./VAERS_Measles_AE_Project)  
 Analyzing 2014–2024 VAERS reports for measles-containing vaccines (MMR, MMRV) to identify adverse event patterns by age, severity, and symptom clusters. This project demonstrates real-world data integration and passive safety surveillance using structured SQL queries, statistical modeling for signal detection, and interactive data visualization. Highlights advanced data wrangling across multiple sources and stakeholder-oriented safety analytics.
 
 ### 💊 [Claims-Based Adherence Analysis](./ClaimsAnalysis)
