@@ -1,8 +1,7 @@
 # 🧪 Vaccine Safety Signal Analysis Using VAERS (2014–2024)
 
 Analyzing 2014–2024 VAERS reports for measles-containing vaccines (MMR, MMRV) to identify adverse event patterns by age, severity, and symptom clusters. 
-This project demonstrates real-world data integration and passive safety surveillance using structured SQL queries, statistical modeling for signal detection, 
-and interactive data visualization.
+This project demonstrates real-world data integration and passive safety surveillance using structured SQL queries, and statistical modeling for signal detection.
 
 ## 📌 Objectives
 
@@ -11,13 +10,11 @@ and interactive data visualization.
 - Characterize adverse event patterns by age group and seriousness
 - Identify common symptom clusters across age categories
 - Detect potential safety signals through descriptive statistics and modeling
-- Visualize trends using Tableau dashboards
 
 ## 🧰 Tools & Technologies
 
 - **SQLiteStudio** – Data wrangling, joins, filtering, and preparation
 - **SAS** – Descriptive analysis and logistic regression
-- **Tableau Public** – Interactive visualization and storytelling
 
 ## 📊 Key Deliverables
 
@@ -28,7 +25,6 @@ and interactive data visualization.
 | `VAERS_Analysis.sas` | SAS program for VAERS Project analysis|
 | `VAERS_MMR_Safety_Analysis_Output.pdf` | Descriptive Statistics, Symptoms Analysis, Logistic Regression SAS Output |
 | `VAERS_MMR_Safety_Analysis_Summary.pdf` | Summary/Interpretation document for VAERS MMR/MMRV project |
-| `Tableau Dashboard` | Visual trends by age, year, and AE severity (link coming soon) |
 
 ## 🔐 Notes
 
