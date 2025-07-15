@@ -11,7 +11,7 @@ I’m a Doctor of Public Health (DrPH) with deep experience in infectious diseas
 - SAS (Base, Proc SQL, Macros)
 - SQL (SQLiteStudio)
 - Surveillance system evaluation (CDC - NHSN and NBS)
-- Data visualization (Tableau, Excel)
+- Data visualization
 - Public health reporting & dashboarding
 - Epidemiologic methods & health equity analysis
 
@@ -21,7 +21,7 @@ I’m a Doctor of Public Health (DrPH) with deep experience in infectious diseas
 Created mock CDISC-compliant SDTM and ADaM datasets using SAS, and generated example Tables, Listings, and Figures (TLFs) for regulatory-style output. Demonstrates knowledge of trial data structure and SAS macro use.
 
 ### 🧪 [Measles Vaccine Safety Surveillance (VAERS)](./VAERS_Measles_AE_Project)  
-Analyzing 2014–2024 VAERS reports for measles-containing vaccines (MMR, MMRV) to identify adverse event patterns by age, severity, and symptom clusters. This project demonstrates real-world data integration and passive safety surveillance using structured SQL queries, statistical modeling for signal detection, and interactive data visualization. Highlights advanced data wrangling across multiple sources and stakeholder-oriented safety analytics.
+Analyzing 2014–2024 VAERS reports for measles-containing vaccines (MMR, MMRV) to identify adverse event patterns by age, severity, and symptom clusters. This project demonstrates real-world data integration and passive safety surveillance using structured SQL queries, and statistical modeling for signal detection. Highlights advanced data wrangling across multiple sources and stakeholder-oriented safety analytics.
 
 ### 💊 [Claims-Based Adherence Analysis](./ClaimsAnalysis)
 Analyzed simulated pharmacy claims data to calculate adherence metrics—proportion of days covered (PDC) and medication possession ratio (MPR)—with stratified summaries by age, sex, and payer type. Demonstrates foundational real-world data (RWD) analysis, medication adherence measurement, and data visualization techniques using structured claims data.
