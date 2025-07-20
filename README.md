@@ -17,6 +17,9 @@ I’m a Doctor of Public Health (DrPH) with deep experience in infectious diseas
 
 ## 📁 Featured Projects
 
+### 🩺 Real-World Oncology Outcomes: Trial-Style RWE Analysis (in progress)
+Simulates a real-world oncology cohort study using mock claims data to mirror clinical trial workflows. This project includes cohort building with SAS/SQL, survival analysis (Kaplan-Meier and Cox regression), and generation of ADaM-style datasets and TLFs for regulatory-style outputs. Demonstrates integration of real-world evidence analytics with clinical trial reporting practices, survival analysis methods, and regulatory documentation preparation (SAP, DSMB report).
+
 ### 🔬 [Clinical Trial Dataset Simulation](./ClinicalTrialProject) (in progress)
 Created mock CDISC-compliant SDTM and ADaM datasets using SAS for a simulated oncology clinical trial. This project includes data derived from realistic case report forms (CRFs), conversion to SDTM and ADaM, and generation of Tables, Listings, and Figures (TLFs) for regulatory-style outputs. Demonstrates knowledge of clinical trial data structure, SAS macro programming, and trial reporting workflows. Also serves as practice for the SAS Clinical Trials Programmer certification. 
 
