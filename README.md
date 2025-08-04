@@ -17,7 +17,7 @@ I’m a Doctor of Public Health (DrPH) with deep experience in infectious diseas
 
 ## 📁 Featured Projects
 
-### 🩺 Real-World Oncology Outcomes: Trial-Style RWE Analysis (in progress)
+### 🩺 [Real-World Oncology Outcomes: Trial-Style RWE Analysis](./RWEOncologyProject) (in progress)
 Simulates a real-world oncology cohort study using mock claims data to mirror clinical trial workflows. This project includes cohort building with SAS/SQL, survival analysis (Kaplan-Meier and Cox regression), and generation of ADaM-style datasets and TLFs for regulatory-style outputs. Demonstrates integration of real-world evidence analytics with clinical trial reporting practices, survival analysis methods, and regulatory documentation preparation (SAP, DSMB report).
 
 ### 🔬 [Clinical Trial Dataset Simulation](./ClinicalTrialProject) (in progress)
@@ -41,6 +41,7 @@ Evaluated the NHSN MDRO/CDI surveillance module using CDC’s guidelines for pub
 ## 📎 Notes
 
 - This portfolio is for demonstration purposes and highlights my coding practices, public health perspective, and communication of findings.
+- The clinical trials and real-world evidence (RWE) oncology projects included here are personal learning projects. They were created to develop and demonstrate my understanding of biostatistics, SAS programming, CDISC standards, and real-world data analytics. These projects are not based on real client data or commercial work and are not intended to imply professional expertise in clinical trials or RWE oncology analytics. They serve as a portfolio of my self-directed learning and skills development.
 
 ## 📫 Contact
 
