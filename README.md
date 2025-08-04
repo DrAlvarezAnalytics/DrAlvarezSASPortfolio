@@ -38,7 +38,7 @@ Evaluated the NHSN MDRO/CDI surveillance module using CDC’s guidelines for pub
 
 
 
-## 📎 Notes
+## 📎 Disclaimer
 
 - This portfolio is for demonstration purposes and highlights my coding practices, public health perspective, and communication of findings.
 - The clinical trials, claims, vaccine safety and real-world evidence (RWE) oncology projects included here are personal learning projects. They were created to develop and demonstrate my understanding of biostatistics, SAS programming, CDISC standards, and real-world data analytics. These projects are not based on real client data or commercial work and are not intended to imply professional expertise in any of these fields. They serve as a portfolio of my self-directed learning and skills development.
